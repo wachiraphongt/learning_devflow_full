@@ -1,6 +1,4 @@
-import { auth, signOut } from "@/auth";
-import { Button } from "@/components/ui/button";
-import ROUTES from "@/constants/route";
+import { auth } from "@/auth";
 import React from "react";
 
 const Home = async () => {
@@ -11,15 +9,6 @@ const Home = async () => {
       <h1 className="h1-bold px-10 pt-[100px]">
         Welcome to the world pf Next.js
       </h1>
-      <form
-        className="px-10 pt-[100px]"
-        action={async () => {
-          "use server";
-          await signOut({ redirectTo: ROUTES.SIGN_IN });
-        }}
-      >
-        <Button type="submit">Log Out</Button>
-      </form>
     </>
   );
 };
