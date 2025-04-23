@@ -44,6 +44,7 @@
   --background-image-auth-dark: url("/images/auth-dark.png");
   --background-image-auth-light: url("/images/auth-light.png");
 }
+
 @layer utilities {
   /* Background utilities */
   .background-light850_dark100 {
@@ -260,11 +261,15 @@
   }
 
   /* Typography utilities */
-  .h1-bold {
+  /* .h1-bold {
     font-size: 30px;
     font-weight: 700;
     line-height: 42px;
     letter-spacing: -0.025em;
+  } */
+
+  .h1-bold {
+    @apply text-[30px] font-bold leading-[42px] tracking-tighter;
   }
 
   .h2-bold {
