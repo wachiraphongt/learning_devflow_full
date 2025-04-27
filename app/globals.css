@@ -468,7 +468,7 @@
 
   /* Component utilities */
   .card-wrapper {
-    background-color: theme("colors.light.900");
+    /* background-color: theme("colors.light.900"); */
     box-shadow: theme("boxShadow.light.100");
   }
 
