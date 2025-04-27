@@ -19,7 +19,7 @@ import {
   FormLabel,
   FormMessage,
 } from "@/components/ui/form";
-import { Input } from "@/components/ui/input_1";
+import { Input } from "@/components/ui/input";
 import Link from "next/link";
 import ROUTES from "@/constants/route";
 
